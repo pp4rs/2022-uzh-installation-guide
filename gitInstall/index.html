@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Git - Programming Practices for Research in Econonomics</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Git";
+    var mkdocs_page_input_path = "gitInstall.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Programming Practices for Research in Econonomics</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Welcome</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../windows-wsl/">Windows Subsystem</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../commandLine/">Command Line Tools</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../textEditor/">Text Editor</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Git</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#account-creation">Account Creation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mac-users">Mac Users</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#installing-git">Installing Git</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#autocompletion">Autocompletion</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#linux-users">Linux Users</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#windows-users">Windows Users</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#verifying-your-install">Verifying your install</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../python/">Python</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../python-more/">Python Extras</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../webscraping_drivers/">Webscraping</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../r/">R</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../rstudio/">RStudio</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../r-packages/">R Packages</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../pandoc/">LaTeX & Pandoc</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../finish-line/">The Finish Line!</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../contact/">Contact Us</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../citation-license/">Citation & License</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../updates/">News & Updates</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../acknowledgement/">Acknowledgements</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Programming Practices for Research in Econonomics</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Git</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="installing-git-and-setting-up-accounts">Installing Git and Setting Up Accounts</h1>
+<p>Git is a Version Control System (VCS) that has gained a lot of traction among the programming community.
+We will want to use version control to keep track of the files we write, and the changes we make to them.</p>
+<h2 id="account-creation">Account Creation</h2>
+<p>During the course we will show you how to use <a href="https://www.github.com">GitHub</a> to host some of your work and do code related project management. You will need to set up an account:</p>
+<ul>
+<li>Please <a href="https://github.com/join">register</a> for a <a href="https://github.com/">GitHub</a> account</li>
+<li>When choosing a username we recommend not using a name that includes an employer or university in case you move later on</li>
+<li>i.e. 'johnsmith' or 'johnsmith86' are OK, 'johnsmithUZH' probably not</li>
+</ul>
+<h2 id="mac-users">Mac Users</h2>
+<h3 id="installing-git">Installing Git</h3>
+<p>We will install Git using Homebrew. Enter the following lines of code into your terminal:</p>
+<pre><code class="language-bash">brew install git
+brew link --force git
+</code></pre>
+<p>Then close and reopen the terminal. Now <a href="#verifying-your-install">Verify your installation</a>.</p>
+<h3 id="autocompletion">Autocompletion</h3>
+<p>When we code we want to be lazy - we don't always want to write out the whole line of code we want to enter, and would prefer the computer to autocomplete our line of code for us.
+The default MacOS terminal doesn't have this autocompletion by default, so let's add it using our trusty friend Homebrew.</p>
+<p>Open a terminal and enter:</p>
+<pre><code class="language-bash">brew install zsh-completion
+</code></pre>
+<div class="admonition warning">
+<p class="admonition-title">Activating Autocomplete on MacOS</p>
+<p>To make the autocompletion work, you will need to add a block of code to your <code>~./zshrc</code> file:</p>
+<p><code>echo "autoload -Uz compinit" &gt;&gt; .zshrc
+echo "compinit" &gt;&gt; .zshrc</code></p>
+<p>Then source these updates (think of this as restarting your terminal) by entering the following command in your terminal:</p>
+<p><code>source ~/.zshrc</code></p>
+</div>
+<!---
+  Autocomplete instructions from here  
+  https://stackoverflow.com/questions/26462667/git-completion-not-working-in-zsh-on-os-x-yosemite-with-homebrew
+
+--->
+
+<h2 id="linux-users">Linux Users</h2>
+<p>Git should be installed already for you.
+To check if it is, enter the following in a terminal:</p>
+<pre><code class="language-bash">git --version
+</code></pre>
+<p>If you get a bunch of numbers (ideally starting with 2.15) or higher - you are good to move on.</p>
+<p>If not, install it by entering the following into the command line:</p>
+<pre><code class="language-bash">sudo apt-get install git
+</code></pre>
+<p>Once complete, <a href="#verifying-your-install">verify your install</a>.</p>
+<h2 id="windows-users">Windows Users</h2>
+<p>Git will be already installed inside your Ubuntu terminal.
+Verify this, by <a href="#verifying-your-install">verifying your installation</a>.</p>
+<h2 id="verifying-your-install">Verifying your install</h2>
+<!-- We will need to make Git accessible from the command line. Windows and Mac users will need to follow the steps on the page "Modifying Path Settings." Linux users will already have git accessible from the command line. -->
+
+<p>To verify your installation, type the following command in a terminal and press the return key:</p>
+<pre><code class="language-bash">git --version
+</code></pre>
+<p>You should get an output that looks like:</p>
+<pre><code class="language-bash">git version 2.25.1
+</code></pre>
+<p>Ensure that you have a version greater than <code>2.15.0</code> installed.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../python/" class="btn btn-neutral float-right" title="Python">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../textEditor/" class="btn btn-neutral" title="Text Editor"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../textEditor/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../python/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
